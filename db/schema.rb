@@ -11,12 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150325181956) do
+ActiveRecord::Schema.define(version: 20150326162538) do
 
   create_table "visitors", force: :cascade do |t|
     t.string   "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string   "affinity"
+    t.string   "referrer"
   end
 
 end
